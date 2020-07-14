@@ -51,10 +51,15 @@ li#select{
   position: relative;
   margin-top: 1.5%;
 }
-div.container{
-	position: absolute;
-	width: 70%;
+div.container-fluid{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#conteudo{
 	border-radius: 10px;
 	opacity: 0.95;
 	background-color: #343a40;
+	margin: 5% auto;
+	width: 70%;
 }
