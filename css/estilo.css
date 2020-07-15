@@ -64,4 +64,7 @@ div#conteudo{
 	margin: 5% auto;
 	width: 70%;
 	padding: 25px;
+	opacity: 0.95;
+    box-shadow: 0px 20px 35px rgba(0,0,0,0.8);
+    border: 2px solid white;
 }

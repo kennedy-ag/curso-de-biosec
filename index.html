@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/slides.css">
 
-    <title>Hello, world!</title>
+    <title>Curso de Biossegurança</title>
   </head>
   <body>
 
@@ -17,15 +18,46 @@
           <a class="nav-link btn btn-info mx-2 my-2" href="#"><i class="fas fa-home"></i> Início <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link btn btn-info mx-2 my-2" href="#"><i class="fas fa-arrow-left"></i> Anterior</a>
+          <a class="nav-link btn btn-info mx-2 my-2" href="#" onclick="voltaSlide()"><i class="fas fa-arrow-left"></i> Anterior</a>
         </li>
         <li id="select" class="nav-item">
           <select class="form-control">
-            <option>Intro</option>
+            <option id="opt0">Intro</option>
+            <option id="opt1">Estrutura do curso</option>
+            <option id="opt2">Objetivos do curso</option>
+            <option id="opt3">CIBio FM UnB</option>
+            <option id="opt4">Quem pode desenvolver atividade envolvendo OGM?</option>
+            <option id="opt5">Composição CIBio-FM UnB</option>
+            <option id="opt6">Mas… o que é OGM e derivado de OGM?</option>
+            <option id="opt7">Trabalho com Organismos Geneticamente Modificados</option>
+            <option id="opt8">Organograma dos órgãos envolvidos no monitoramento das atividades envolvendo OGM no Brasil</option>
+            <option id="opt9">Na UnB, há mais de uma CIBio</option>
+            <option id="opt10">Papel da CIBio-FM CQB 0505/2020</option>
+            <option id="opt11">Comissão Técnica Nacional de Biossegurança (CTNBio)</option>
+            <option id="opt12">Órgãos e Entidades de Registro e Fiscalização (OERF)</option>
+            <option id="opt13">Competência dos OERF</option>
+            <option id="opt14">Conselho Nacional de Biossegurança (CNBS)</option>
+            <option id="opt15">Exemplos de infrações administrativas</option>
+            <option id="opt16">Responsabilidades</option>
+            <option id="opt17">Penalidades</option>
+            <option id="opt18">Gravidade x Multa</option>
+            <option id="opt19">Elementos de fiscalização de laboratórios de pesquisa</option>
+            <option id="opt20">Análise dos documentos</option>
+            <option id="opt21">Objetivo da fiscalização</option>
+            <option id="opt22">Definição de Biossegurança</option>
+            <option id="opt23">Sistema de Biossegurança Brasileiro</option>
+            <option id="opt24">Trabalho em contenção com material biológico</option>
+            <option id="opt25">Níveis de Biossegurança</option>
+            <option id="opt26">Cabines de Segurança Biológica</option>
+            <option id="opt27">CSB Classe II A (A1)</option>
+            <option id="opt28">CSB Classe II B</option>
+            <option id="opt29">Procedimentos emergenciais</option>
+            <option id="opt30">Em caso de acidentes</option>
+            <option id="opt31">Literatura útil</option>
           </select>
         </li>
         <li class="nav-item active">
-          <a class="nav-link btn btn-info mx-2 my-2" href="#">Próximo <i class="fas fa-arrow-right"></i></a>
+          <a class="nav-link btn btn-info mx-2 my-2" href="#" onclick="avancaSlide()">Próximo <i class="fas fa-arrow-right"></i></a>
         </li>
       </ul>
     </nav>
@@ -74,14 +106,122 @@
 
     <div class="container-fluid">
       <div id="conteudo">
-        <h1>AAAA</h1>
+        <div id="intro">
+          <img src="img/unb.png">
+          <h1>Introdução à Biossegurança e pesquisa com OGM</h1>
+          <p>Comissão Interna de Biossegurança</p>
+          <p>Faculdade de Medicina</p>
+          <p>UnB</p>
+          <p>Versão 2.0</p>
+          <p>2020</p>
+        </div>
       </div>
     </div>
 
 
+    <div id="div0" class="content">
+      <div id="conteudo0">
+        <img src="img/unb.png">
+        <h1>Introdução à Biossegurança e pesquisa com OGM</h1>
+        <p>Comissão Interna de Biossegurança</p>
+        <p>Faculdade de Medicina</p>
+        <p>UnB</p>
+        <p>Versão 2.0</p>
+        <p>2020</p>
+      </div>
+    </div>
+
+    <div id="div1" class="content">
+      <div id="conteudo1">
+        <h1>Estrutura do curso</h1>
+        <hr>
+        <h2>1. CIBio-FM UnB CQB 0505/2020</h2>
+        <h3>i. Composição, conceitos, legislação e responsabilidades legais</h3>
+        <h2>2. Conceitos gerais em biossegurança</h2>
+        <h3>i. Risco químico</h3>
+        <h3>ii. Risco biológico</h3>
+      </div>
+    </div>
+
+    <div id="div2" class="content">
+      <div id="conteudo2">
+        <h1>Objetivos do curso</h1>
+        <hr>
+        <p>Ao final do curso, você deverá:</p>
+        <p>1. Conhecer a composição da CIBio-FM UnB;</p>
+        <p>2. Compreender o arcabouço regulatório envolvendo Biossegurança e Organismos Geneticamente Modificados (OGM);</p>
+        <p>3. Conhecer as normas de biossegurança.</p>
+      </div>
+    </div>
+
+    <div class="content" id="conteudo3">
+      <h1>Comissão Interna de Biossegurança da Faculdade de Medicina - UnB (CIBio-FM UnB CQB 0505/2020)</h1>
+      <hr>
+      <p>"Toda instituição que utilizar técnicas e métodos de engenharia genética ou realizar pesquisas com OGM e seus derivados deverá criar uma Comissão Interna de Biossegurança - CIBio, além de indicar um técnico principal responsável para cada projeto específico".</p>
+      <p>Lei no 11.105/2005</p>
+    </div>
+
+    <div class="content" id="conteudo4">
+      <h1>Quem pode desenvolver atividade envolvendo OGM?</h1>
+      <hr>
+      <p>Você não pode desenvolver atividades com OGM sozinho, em sua casa, por exemplo!!!!</p>
+      <img src="img/quimica.jpg">
+    </div>
+
+    <div class="content" id="conteudo5">
+      <h1>Composição CIBio-FM UnB CQB 0505/2020</h1>
+      <hr>
+      <p>Med. Veterinária: Fernanda Souza Natividade Gontijo;</p>
+      <p>Presidente: Profa. Dra. Doralina do Amaral Rabello Ramos;</p>
+      <p>Profa. Dra. Fabíola Cristina Ribeiro Zucchi;</p>
+      <p>Secretário: Prof. Dr. Hugo Costa Paes;</p>
+      <p>Profa. Dra. Juliana Forte Mazzeu de Araújo;</p>
+      <p>Vice-presidente: Profa. Dra. Juliana Lott de Carvalho;</p>
+      <p>Profa. Dra. Laila Salmen Espíndola;</p>
+      <p>Profa. Dra. Mariana Machado Hecht.</p>
+    </div>
+
+    <div class="content" id="conteudo6">
+      <h1>Mas… o que é OGM e derivado de OGM?</h1>
+      <hr>
+      <p>OGM: Organismo cujo material genético – DNA/RNA tenha sido modificado por qualquer técnica de engenharia genética.</p>
+      <p>Derivado de OGM: produto obtido de OGM e que não possua capacidade autônoma de replicação ou que não contenha forma viável de OGM.</p>
+    </div>
+
+    <div class="content" id="conteudo7">
+      <h1>Trabalho com Organismos Geneticamente Modificados</h1>
+      <hr>
+      <p><strong>Todas as atividades envolvendo OGM são reguladas pela lei de biossegurança, no. 11.105, de 2005. Essa lei:</strong></p>
+      <p>Cria o Conselho Nacional de Biossegurança (CNBS);</p>
+      <p>Cria a Comissão Técnica Nacional de Biossegurança (CTNBio) e determina que as instituições que realizem atividades com OGM criem as Comissões Internas de Biossegurança (CIBio);</p>
+      <p>Institui a obrigatoriedade do Certificado de Qualidade em Biossegurança (CQB) emitido pela CTNBio para estas atividades acima referidas;</h3>
+      <p>Estabelece as diretrizes e procedimentos para atividades que envolvam a OGM e seus derivado;</p>
+      <hr>
+      <p><strong>Determina que alguns órgãos serão fiscalizadores das atividades envolvendo OGM, como:</strong></p>
+      <p>- Ministério da Agricultura, Pecuária e Abastecimento (MAPA);</p>
+      <p>- Ministério do Meio Ambiente (MMA);</p>
+      <p>- Agência Nacional de Vigilância Sanitária (ANVISA).</p>
+    </div>
+
+    <div class="content" id="conteudo8">
+      <h1>Organograma dos órgãos envolvidos no monitoramento das atividades envolvendo OGM no Brasil</h1>
+      <hr>
+      <img src="img/organograma1.png">
+      <p>Modelo descentralizado;</p>
+      <p>As CIBios devem enviar relatórios anuais à CTNBio, além de reportar eventuais acidentes;</p>
+      <p>As CIBios são responsáveis por garantir a biossegurança envolvendo OGM no país!</p>
+    </div>
+
+    <div class="content" id="conteudo9">
+      <h1>Na Unb, há mais de uma CIBio!</h1>
+      <hr>
+      <p>A CIBio-FM UnB CQB 0505/2020 acompanha apenas os laboratórios da Faculdade de Medicina que estão contemplados no CQB!!!!</p>
+    </div>
+
+
+    <script src="js/script.js"></script>
     <script src="lib/jquery.min.js"></script>
     <script src="lib/bootstrap.bundle.min.js"></script>
     <script src="lib/fontawesome.js"></script>
-    <script src="js/script.js"></script>
   </body>
 </html>

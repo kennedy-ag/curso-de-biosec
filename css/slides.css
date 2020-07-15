@@ -1,0 +1,17 @@
+div.content{
+	background-color: #343a40;
+	margin: 20px;
+	display: none;
+}
+div#intro{
+	
+}
+div#conteudo0{
+	background-color: cyan;
+}
+div#conteudo1{
+	background-color: gray;
+}
+div#conteudo2{
+	background-color: orange;
+}
