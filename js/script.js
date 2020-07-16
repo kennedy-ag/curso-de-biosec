@@ -11,7 +11,7 @@ function menuSelect(tgt) {
 	let option = document.getElementById(tgt);
 	option.selected = 1;
 	let a = document.getElementById('conteudo');
-	let b = document.getElementById('conteudo'+slide_ativo);
+	let b = document.getElementById('div'+slide_ativo);
 	a.innerHTML = b.innerHTML;
 }
 function avancaSlide() {
@@ -41,6 +41,6 @@ function voltarAoInicio(tgt){
 	let option = document.getElementById(tgt);
 	option.selected = 1;
 	let a = document.getElementById('conteudo');
-	let b = document.getElementById('conteudo0');
+	let b = document.getElementById('div0');
 	a.innerHTML = b.innerHTML;
 }

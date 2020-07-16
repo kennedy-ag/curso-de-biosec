@@ -1,5 +1,7 @@
 body{
-	background-color: #ddd;
+	background-image: url("../img/molecula.webp");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 }
 .nav-link{
 	padding: 5px;
@@ -60,7 +62,7 @@ div.container-fluid{
 div#conteudo{
 	border-radius: 10px;
 	opacity: 0.95;
-	background-color: #343a40;
+	background-color: #6c757d;
 	margin: 5% auto;
 	width: 70%;
 	padding: 25px;
