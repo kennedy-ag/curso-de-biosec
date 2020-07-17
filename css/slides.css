@@ -17,7 +17,7 @@ div.slide p{
 	font-family: Calibri, Arial;
 	font-size: 14pt;
 }
-hr{
+div.slide hr{
 	margin: 20px 0px;
 	background-color: #ddd;
 	height: 1px;
