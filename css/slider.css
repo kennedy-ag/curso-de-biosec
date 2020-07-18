@@ -7,3 +7,6 @@ div.card{
 div.card:hover{
 	-webkit-transform: scale(1.1);
 }
+div#opcoes{
+	margin-top: 5%;
+}
