@@ -4,560 +4,202 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="lib/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/slides.css">
 
     <title>Curso de Biossegurança</title>
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow-lg">
-      <a class="navbar-brand" href="#" onclick="openNav()"><span class="navbar-toggler-icon"></span></a>
-      <ul class="navbar-nav m-auto">
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <ul class="navbar-nav mx-auto">
         <li class="nav-item active">
-          <a class="nav-link btn btn-info mx-2 my-2" href="#" onclick="voltarAoInicio('opt0')"><i class="fas fa-home"></i> Início <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link btn btn-info mx-2 my-2" href="#" onclick="voltaSlide()"><i class="fas fa-arrow-left"></i> Anterior</a>
-        </li>
-        <li id="select" class="nav-item">
-          <select class="form-control">
-            <option id="opt0">Intro</option>
-            <option id="opt1">Estrutura do curso</option>
-            <option id="opt2">Objetivos do curso</option>
-            <option id="opt3">CIBio FM UnB</option>
-            <option id="opt4">Quem pode desenvolver atividade envolvendo OGM?</option>
-            <option id="opt5">Composição CIBio-FM UnB</option>
-            <option id="opt6">Mas… o que é OGM e derivado de OGM?</option>
-            <option id="opt7">Trabalho com Organismos Geneticamente Modificados</option>
-            <option id="opt8">Organograma dos órgãos envolvidos no monitoramento das atividades envolvendo OGM no Brasil</option>
-            <option id="opt9">Na UnB, há mais de uma CIBio</option>
-            <option id="opt10">Papel da CIBio-FM CQB 0505/2020</option>
-            <option id="opt11">Comissão Técnica Nacional de Biossegurança (CTNBio)</option>
-            <option id="opt12">Órgãos e Entidades de Registro e Fiscalização (OERF)</option>
-            <option id="opt13">Competência dos OERF</option>
-            <option id="opt14">Conselho Nacional de Biossegurança (CNBS)</option>
-            <option id="opt15">Exemplos de infrações administrativas</option>
-            <option id="opt16">Responsabilidades</option>
-            <option id="opt17">Penalidades</option>
-            <option id="opt18">Gravidade x Multa</option>
-            <option id="opt19">Elementos de fiscalização de laboratórios de pesquisa</option>
-            <option id="opt20">Análise dos documentos</option>
-            <option id="opt21">Objetivo da fiscalização</option>
-            <option id="opt22">Definição de Biossegurança</option>
-            <option id="opt23">Sistema de Biossegurança Brasileiro</option>
-            <option id="opt24">Trabalho em contenção com material biológico</option>
-            <option id="opt25">Níveis de Biossegurança</option>
-            <option id="opt26">Cabines de Segurança Biológica</option>
-            <option id="opt27">CSB Classe II A (A1)</option>
-            <option id="opt28">CSB Classe II B</option>
-            <option id="opt29">Procedimentos emergenciais</option>
-            <option id="opt30">Em caso de acidentes</option>
-            <option id="opt31">Literatura útil</option>
-          </select>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link btn btn-info mx-2 my-2" href="#" onclick="avancaSlide()">Próximo <i class="fas fa-arrow-right"></i></a>
+          <h3 class="nav-link" href="#">Curso de Biossegurança <span class="sr-only">(current)</span></h3>
         </li>
       </ul>
     </nav>
 
 
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index.html"><i class="fas fa-home"></i> Voltar ao início</a>
-      <hr>
-      <a href="#" onclick="menuSelect('opt0')">&#9900; Capa</a>
-      <a href="#" onclick="menuSelect('opt1')">&#9900; Estrutura do curso</a>
-      <a href="#" onclick="menuSelect('opt2')">&#9900; Objetivos do curso</a>
-      <a href="#" onclick="menuSelect('opt3')">&#9900; CIBio FM UnB</a>
-      <a href="#" onclick="menuSelect('opt4')">&#9900; Quem pode desenvolver atividade envolvendo OGM?</a>
-      <a href="#" onclick="menuSelect('opt5')">&#9900; Composição CIBio-FM UnB</a>
-      <a href="#" onclick="menuSelect('opt6')">&#9900; Mas… o que é OGM e derivado de OGM?</a>
-      <a href="#" onclick="menuSelect('opt7')">&#9900; Trabalho com Organismos Geneticamente Modificados</a>
-      <a href="#" onclick="menuSelect('opt8')">&#9900; Organograma dos órgãos envolvidos no monitoramento das atividades envolvendo OGM no Brasil</a>
-      <a href="#" onclick="menuSelect('opt9')">&#9900; Na UnB, há mais de uma CIBio</a>
-      <a href="#" onclick="menuSelect('opt10')">&#9900; Papel da CIBio-FM CQB 0505/2020</a>
-      <a href="#" onclick="menuSelect('opt11')">&#9900; Comissão Técnica Nacional de Biossegurança (CTNBio)</a>
-      <a href="#" onclick="menuSelect('opt12')">&#9900; Órgãos e Entidades de Registro e Fiscalização (OERF)</a>
-      <a href="#" onclick="menuSelect('opt13')">&#9900; Competência dos OERF</a>
-      <a href="#" onclick="menuSelect('opt14')">&#9900; Conselho Nacional de Biossegurança (CNBS)</a>
-      <a href="#" onclick="menuSelect('opt15')">&#9900; Exemplos de infrações administrativas</a>
-      <a href="#" onclick="menuSelect('opt16')">&#9900; Responsabilidades</a>
-      <a href="#" onclick="menuSelect('opt17')">&#9900; Penalidades</a>
-      <a href="#" onclick="menuSelect('opt18')">&#9900; Gravidade x Multa</a>
-      <a href="#" onclick="menuSelect('opt19')">&#9900; Elementos de fiscalização de laboratórios de pesquisa</a>
-      <a href="#" onclick="menuSelect('opt20')">&#9900; Análise dos documentos</a>
-      <a href="#" onclick="menuSelect('opt21')">&#9900; Objetivo da fiscalização</a>
-      <a href="#" onclick="menuSelect('opt22')">&#9900; Definição de Biossegurança</a>
-      <a href="#" onclick="menuSelect('opt23')">&#9900; Sistema de Biossegurança Brasileiro</a>
-      <a href="#" onclick="menuSelect('opt24')">&#9900; Trabalho em contenção com material biológico</a>
-      <a href="#" onclick="menuSelect('opt25')">&#9900; Níveis de Biossegurança</a>
-      <a href="#" onclick="menuSelect('opt26')">&#9900; Cabines de Segurança Biológica</a>
-      <a href="#" onclick="menuSelect('opt27')">&#9900; CSB Classe II A (A1)</a>
-      <a href="#" onclick="menuSelect('opt28')">&#9900; CSB Classe II B</a>
-      <a href="#" onclick="menuSelect('opt29')">&#9900; Procedimentos emergenciais</a>
-      <a href="#" onclick="menuSelect('opt30')">&#9900; Em caso de acidentes</a>
-      <a href="#" onclick="menuSelect('opt31')">&#9900; Literatura útil</a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
+    <div class="container py-3">
+
+      <h1 class="text-center p-4">O que você deseja fazer?</h1>
+
+      <div id="opcoes" class="row">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card shadow-lg mx-auto my-3" style="width: 18rem;">
+            <div class="card-body text-center">
+              <h5 class="card-title"><i class="fas fa-edit"></i> Ver conteúdo do curso</h5>
+              <hr>
+              <p class="card-text">Exibir os tópicos que serão abordados no curso.</p><br>
+              <a href="#" class="card-link btn btn-info" data-toggle="modal" data-target="#modal1">Exibir</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card shadow-lg mx-auto my-3" style="width: 18rem;">
+            <div class="card-body text-center">
+              <h5 class="card-title"><i class="fas fa-info-circle"></i> Sobre o curso</h5>
+              <hr>
+              <p class="card-text">Saiba mais sobre o curso que você está prestes a começar!</p><br>
+              <a href="#" class="card-link btn btn-info" data-toggle="modal" data-target="#modal2">Visualizar</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card shadow-lg mx-auto my-3" style="width: 18rem;">
+            <div class="card-body text-center">
+              <h5 class="card-title"><i class="fas fa-book"></i> Ir para o curso</h5>
+              <hr>
+              <p class="card-text">Acessar o slider com o conteúdo do curso.</p><br>
+              <a href="slider.html" class="card-link btn btn-info">Acessar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="container-fluid">
-      <div id="conteudo">
-        <div class="slide" id="intro">
-          <img src="img/unb.png">
-          <h1>Introdução à Biossegurança e pesquisa com OGM</h1>
-          <p>Comissão Interna de Biossegurança</p>
-          <p>Faculdade de Medicina</p>
-          <p>UnB</p>
-          <p>Versão 2.0</p>
-          <p>2020</p>
+
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="sobreOCurso" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sobreOCurso">Conteúdo do curso</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-info font-weight-bold">Abaixo estão listados todos os tópicos que são abordados no curso de Biossegurança ofertado:</p>
+            <ul>
+              <li>
+                <p>Estrutura do curso</p>
+              </li>
+              <li>
+                <p>Objetivos do curso</p>
+              </li>
+              <li>
+                <p>CIBio FM UnB</p>
+              </li>
+              <li>
+                <p>Quem pode desenvolver atividade envolvendo OGM?</p>
+              </li>
+              <li>
+                <p>Composição CIBio-FM UnB</p>
+              </li>
+              <li>
+                <p>Mas… o que é OGM e derivado de OGM?</p>
+              </li>
+              <li>
+                <p>Trabalho com Organismos Geneticamente Modificados</p>
+              </li>
+              <li>
+                <p>Organograma dos órgãos envolvidos no monitoramento das atividades envolvendo OGM no Brasil</p>
+              </li>
+              <li>
+                <p>Na UnB, há mais de uma CIBio</p>
+              </li>
+              <li>
+                <p>Papel da CIBio-FM CQB 0505/2020</p>
+              </li>
+              <li>
+                <p>Comissão Técnica Nacional de Biossegurança (CTNBio)</p>
+              </li>
+              <li>
+                <p>Órgãos e Entidades de Registro e Fiscalização (OERF)</p>
+              </li>
+              <li>
+                <p>Competência dos OERF</p>
+              </li>
+              <li>
+                <p>Conselho Nacional de Biossegurança (CNBS)</p>
+              </li>
+              <li>
+                <p>Exemplos de infrações administrativas</p>
+              </li>
+              <li>
+                <p>Responsabilidades</p>
+              </li>
+              <li>
+                <p>Penalidades</p>
+              </li>
+              <li>
+                <p>Gravidade x Multa</p>
+              </li>
+              <li>
+                <p>Elementos de fiscalização de laboratórios de pesquisa</p>
+              </li>
+              <li>
+                <p>Análise dos documentos</p>
+              </li>
+              <li>
+                <p>Objetivo da fiscalização</p>
+              </li>
+              <li>
+                <p>Definição de Biossegurança</p>
+              </li>
+              <li>
+                <p>Sistema de Biossegurança Brasileiro</p>
+              </li>
+              <li>
+                <p>Trabalho em contenção com material biológico</p>
+              </li>
+              <li>
+                <p>Níveis de Biossegurança</p>
+              </li>
+              <li>
+                <p>Cabines de Segurança Biológica</p>
+              </li>
+              <li>
+                <p>CSB Classe II A (A1)</p>
+              </li>
+              <li>
+                <p>CSB Classe II B</p>
+              </li>
+              <li>
+                <p>Procedimentos emergenciais</p>
+              </li>
+              <li>
+                <p>Em caso de acidentes</p>
+              </li>
+              <li>
+                <p>Literatura útil</p>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="conteudoDoCurso" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="conteudoDoCurso">Sobre o curso</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body px-4">
+            <h6 class="text-info">Curso de Biossegurança</h6>
+            <p class="text-justify">O curso de Biossegurança é ofertado gratuitamente pela Faculdade de Medicina da Universidade de Brasília. Neste curso, você conhecerá a composição da CIBio-FM UnB, irá compreender o arcabouço regulatório envolvendo Biossegurança e Organismos Geneticamente Modificados (OGM), além de conhecer as normas de biossegurança.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Fechar</button>
+          </div>
         </div>
       </div>
     </div>
 
 
-    <div id="div0" class="content">
-      <div class="slide" id="conteudo0">
-        <img src="img/unb.png">
-        <h1>Introdução à Biossegurança e pesquisa com OGM</h1>
-        <p>Comissão Interna de Biossegurança</p>
-        <p>Faculdade de Medicina</p>
-        <p>UnB</p>
-        <p>Versão 2.0</p>
-        <p>2020</p>
-      </div>
-    </div>
-
-    <div id="div1" class="content">
-      <div class="slide" id="conteudo1">
-        <h1>Estrutura do curso</h1>
-        <hr>
-        <h2>1. CIBio-FM UnB CQB 0505/2020</h2>
-        <h3>i. Composição, conceitos, legislação e responsabilidades legais</h3>
-        <h2>2. Conceitos gerais em biossegurança</h2>
-        <h3>i. Risco químico</h3>
-        <h3>ii. Risco biológico</h3>
-      </div>
-    </div>
-
-    <div id="div2" class="content">
-      <div class="slide" id="conteudo2">
-        <h1>Objetivos do curso</h1>
-        <hr>
-        <p>Ao final do curso, você deverá:</p>
-        <p>1. Conhecer a composição da CIBio-FM UnB;</p>
-        <p>2. Compreender o arcabouço regulatório envolvendo Biossegurança e Organismos Geneticamente Modificados (OGM);</p>
-        <p>3. Conhecer as normas de biossegurança.</p>
-      </div>
-    </div>
-
-    <div id="div3" class="content">
-      <div class="slide" id="conteudo3">
-        <h1>Comissão Interna de Biossegurança da Faculdade de Medicina - UnB (CIBio-FM UnB CQB 0505/2020)</h1>
-        <hr>
-        <p>"Toda instituição que utilizar técnicas e métodos de engenharia genética ou realizar pesquisas com OGM e seus derivados deverá criar uma Comissão Interna de Biossegurança - CIBio, além de indicar um técnico principal responsável para cada projeto específico".</p>
-        <p>Lei no 11.105/2005</p>
-      </div>
-    </div>
-
-    <div id="div4" class="content">
-      <div class="slide" id="conteudo4">
-        <h1>Quem pode desenvolver atividade envolvendo OGM?</h1>
-        <hr>
-        <p>Você não pode desenvolver atividades com OGM sozinho, em sua casa, por exemplo!!!!</p>
-        <img src="img/quimica.jpg">
-      </div>
-    </div>
-
-    <div id="div5" class="content">
-      <div class="slide" id="conteudo5">
-        <h1>Composição CIBio-FM UnB CQB 0505/2020</h1>
-        <hr>
-        <p>Med. Veterinária: Fernanda Souza Natividade Gontijo;</p>
-        <p>Presidente: Profa. Dra. Doralina do Amaral Rabello Ramos;</p>
-        <p>Profa. Dra. Fabíola Cristina Ribeiro Zucchi;</p>
-        <p>Secretário: Prof. Dr. Hugo Costa Paes;</p>
-        <p>Profa. Dra. Juliana Forte Mazzeu de Araújo;</p>
-        <p>Vice-presidente: Profa. Dra. Juliana Lott de Carvalho;</p>
-        <p>Profa. Dra. Laila Salmen Espíndola;</p>
-        <p>Profa. Dra. Mariana Machado Hecht.</p>
-      </div>
-    </div>
-
-    <div id="div6" class="content">
-      <div class="slide" id="conteudo6">
-        <h1>Mas… o que é OGM e derivado de OGM?</h1>
-        <hr>
-        <p>OGM: Organismo cujo material genético – DNA/RNA tenha sido modificado por qualquer técnica de engenharia genética.</p>
-        <p>Derivado de OGM: produto obtido de OGM e que não possua capacidade autônoma de replicação ou que não contenha forma viável de OGM.</p>
-      </div>
-    </div>
-
-    <div id="div7" class="content">
-      <div class="slide" id="conteudo7">
-        <h1>Trabalho com Organismos Geneticamente Modificados</h1>
-        <hr>
-        <p><strong>Todas as atividades envolvendo OGM são reguladas pela lei de biossegurança, no. 11.105, de 2005. Essa lei:</strong></p>
-        <p>Cria o Conselho Nacional de Biossegurança (CNBS);</p>
-        <p>Cria a Comissão Técnica Nacional de Biossegurança (CTNBio) e determina que as instituições que realizem atividades com OGM criem as Comissões Internas de Biossegurança (CIBio);</p>
-        <p>Institui a obrigatoriedade do Certificado de Qualidade em Biossegurança (CQB) emitido pela CTNBio para estas atividades acima referidas;</h3>
-        <p>Estabelece as diretrizes e procedimentos para atividades que envolvam a OGM e seus derivado;</p>
-        <hr>
-        <p><strong>Determina que alguns órgãos serão fiscalizadores das atividades envolvendo OGM, como:</strong></p>
-        <p>- Ministério da Agricultura, Pecuária e Abastecimento (MAPA);</p>
-        <p>- Ministério do Meio Ambiente (MMA);</p>
-        <p>- Agência Nacional de Vigilância Sanitária (ANVISA).</p>
-      </div>
-    </div>
-
-    <div id="div8" class="content">
-      <div class="slide" id="conteudo8">
-        <h1>Organograma dos órgãos envolvidos no monitoramento das atividades envolvendo OGM no Brasil</h1>
-        <hr>
-        <img src="img/organograma1.png">
-        <p>Modelo descentralizado;</p>
-        <p>As CIBios devem enviar relatórios anuais à CTNBio, além de reportar eventuais acidentes;</p>
-        <p>As CIBios são responsáveis por garantir a biossegurança envolvendo OGM no país!</p>
-      </div>
-    </div>
-
-    <div id="div9" class="content">
-      <div class="slide" id="conteudo9">
-        <h1>Na Unb, há mais de uma CIBio!</h1>
-        <hr>
-        <p>A CIBio-FM UnB CQB 0505/2020 acompanha apenas os laboratórios da Faculdade de Medicina que estão contemplados no CQB!!!!</p>
-      </div>
-    </div>
-
-    <div id="div10" class="content">
-      <div class="slide" id="conteudo10">
-        <h1>Papel da CIBio-FM CQB 0505/2020</h1>
-        <hr>
-        <p><span class="icone">&#10154;</span> Estabelecer normas para as pesquisas com OGM e derivados;</p>
-        <p><span class="icone">&#10154;</span> Fazer avaliação de risco de atividades e projetos com OGM e derivados, CASO A CASO;</p>
-        <p><span class="icone">&#10154;</span> Autorizar, cadastrar e acompanhar as atividades de pesquisa com OGM (Nivel de Biossegurança NB1) ou derivado de OGM, e, em caso de OGM NB2 ou superior, encaminhar o projeto à CTNBio para apreciação e aprovação do projeto;</p>
-        <p><span class="icone">&#10154;</span> Autorizar a importação de OGM e seus derivados para atividade de pesquisas;</p>
-        <p><span class="icone">&#10154;</span> Assessoramento ao CNBS na formulação da Política Nacional de Biossegurança de OGM e derivados;
-        Emitir os Certificados de Qualidade em Biossegurança – CQB;</p>
-        <p><span class="icone">&#10154;</span> Emitir decisão técnica, sobre a biossegurança de OGM e seus derivados, que tem caráter vinculativo para os demais órgãos e entidades da administração;</p>
-        <p><span class="icone">&#10154;</span> Elaborar o Manual de Biossegurança dos Laboratórios da Faculdade de Medicina da UnB;</p>
-        <p><span class="icone">&#10154;</span> Realizar inspeção anual nos laboratórios;</p>
-        <p><span class="icone">&#10154;</span> Treinar colaboradores e usuários dos laboratórios;</p>
-        <p><span class="icone">&#10154;</span> Realizar, ao menos, 2 reuniões anuais;</p>
-        <p><span class="icone">&#10154;</span> Elaborar o relatório anual, informando os projetos envolvendo OGM em andamento;
-        Relatar acidentes à CTNBio.</p>
-        <hr>
-        <p><strong>Todas as atividades envolvendo OGM citadas abaixo devem ser monitoradas pela CIBio:</strong></p>
-        <p>Pesquisa</p>
-        <p>Liberação no meio ambiente</p>
-        <p>Importação e exportação</p>
-        <p>Produção</p>
-        <p>Consumo</p>
-        <p>Construção</p>
-        <p>Armazenamento</p>
-        <p>Cultivo</p>
-        <p>Transferência</p>
-        <p>Descarte</p>
-        <p>Manipulação</p>
-        <p>Transporte</p>
-        <p>Comercialização</p>
-        <hr>
-        <p>Portanto, apesar de acompanhar diretamente apenas os laboratórios certificados, a CIBio-FM UnB CQB 0505/2020 irá oferecer o treinamento online para todos os usuários dos laboratórios da Faculdade de Medicina da UnB!</p>
-      </div>
-    </div>
-
-    <div id="div11" class="content">
-      <div class="slide" id="conteudo11">
-        <h1>Comissão Técnica Nacional de Biossegurança (CTNBio)</h1>
-        <hr>
-        <p><strong>Prerrogativa:</strong></p>
-        <p>- Decisões técnicas sobre OGM e derivados;</p>
-        <p>- Decisão soberana sobre pesquisa!</p>
-        <hr>
-        <h2>Composição:</h2>
-        <h3>12 cientistas: 3 da área de saúde humana, 3 de animal, 3 de vegetal, 3 de meio ambiente;</h3>
-        <h3>9 representantes de ministérios;</h3>
-        <h3>1 especialista em defesa do consumidor;</h3>
-        <h3>1 especialista em saúde;</h3>
-        <h3>1 especialista em meio ambiente;</h3>
-        <h3>1 especialista em biotecnologia;</h3>
-        <h3>1 especialista em agricultura familiar;</h3>
-        <h3>1 especialista em saúde do trabalhador.</h3>
-      </div>
-    </div>
-
-    <div id="div12" class="content">
-      <div class="slide" id="conteudo12">
-        <h1>Órgãos e Entidades de Registro e Fiscalização (OERF)</h1>
-        <hr>
-        <h2>Agricultura: Ministério da Agricultura, Pecuária e Abastecimento;</h2>
-        <h2>Saúde: Ministério da Saúde;</h2>
-        <h2>Meio Ambiente: Ministério do Meio Ambiente;</h2>
-        <h2>Secretaria Especial de Aqüicultura e Pesca - SEAP</h2>
-      </div>
-    </div>
-
-    <div id="div13" class="content">
-      <div class="slide" id="conteudo13">
-        <h1>Competência dos OERF</h1>
-        <hr>
-        <p>Fiscalizar as atividades de pesquisa;</p>
-        <p>Fiscalizar o cumprimento das normas e medidas de biossegurança;</p>
-        <p>Estabelecer normas de registro, autorização, fiscalização e licenciamento ambiental;</p>
-        <p>Registrar e fiscalizar a liberação comercial;</p>
-        <p>Emitir autorização para a importação de OGM para uso comercial.</p>
-      </div>
-    </div>
-
-    <div id="div14" class="content">
-      <div class="slide" id="conteudo14">
-        <h1>Conselho Nacional de Biossegurança (CNBS)</h1>
-        <hr>
-        <img src="img/organograma3.png">
-        <p><strong>11 Membros:</strong></p>
-        <p>- Presidente: Ministro de Estado Chefe da Casa Civil</p>
-        <p>- Ministro da Ciência e Tecnologia</p>
-        <p>- Ministro do Desenvolvimento Agrário</p>
-        <p>- Ministro da Agricultura, Pecuária e Abastecimento</p>
-        <p>- Ministro da Justiça</p>
-        <p>- Ministro da Saúde</p>
-        <p>- Ministro do Meio Ambiente</p>
-        <p>- Ministro do Desenvolvimento, Indústria e Comércio Exterior</p>
-        <p>- Ministro das Relações Exteriores</p>
-        <p>- Ministro da Defesa</p>
-        <p>- Secretário Especial de Aqüicultura e Pesca da Presidência da República</p>
-      </div>
-    </div>
-
-    <div id="div15" class="content">
-      <div class="slide" id="conteudo15">
-        <h1>Exemplos de infrações administrativas</h1>
-        <hr>
-        <p>Realizar atividades de pesquisa e uso comercial de OGM e seus derivados sem autorização da CTNBio ou em desacordo com as normas por ela expedidas;</p>
-        <p>Deixar de manter registro do acompanhamento individual de cada atividade ou projeto de pesquisa envolvendo OGM;</p>
-        <p>Destruir ou descartar OGM no meio ambiente em desacordo com as normas da CTNBio e dos OERF.</p>
-        <p>Produzir, armazenar, transportar, comercializar, importar ou exportar OGM e seus derivados, sem autorização ou em desacordo com as normas estabelecidas pela CTNBio e pelos órgãos de registro e fiscalização.</p>
-      </div>
-    </div>
-
-    <div id="div16" class="content">
-      <div class="slide" id="conteudo16">
-        <h1>Responsabilidades</h1>
-        <hr>
-        <p>Civil: Indenizar ou reparar danos ao meio ambiente e a terceiros;</p>
-        <p>Administrativa: pagamento de multas entre R$2.000,00 e R$1.500.000,00;</p>
-        <p>Criminal: tipificação de crimes e respectivas penas. Ex: liberação ou descarte de OGM no meio ambiente; transporte, importação em desacordo com normas da CTNBio.</p>
-      </div>
-    </div>
-
-    <div id="div17" class="content">
-      <div class="slide" id="conteudo17">
-        <h1>Todas as atividades envolvendo OGM citadas abaixo devem ser monitoradas pela CIBio</h1>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-      </div>
-    </div>
-
-    <div id="div18" class="content">
-      <div class="slide" id="conteudo18">
-        <h1>Gravidade x Multa</h1>
-        <hr>
-        <p>Leve: R$ 2.000 a R$ 60.000</p>
-        <p>Grave: R$ 60.001 a R$500.000</p>
-        <p>Gravíssima: R$ 500.001 a R$1.500.000</p>
-      </div>
-    </div>
-
-    <div id="div19" class="content">
-      <div class="slide" id="conteudo19">
-        <h1>Elementos de fiscalização de laboratórios de pesquisa</h1>
-        <hr>
-        <p>Treinamento e uso de Equipamentos de Proteção Individual (EPI);</p>
-        <p>Restrição de acesso ao laboratório;</p>
-        <p>Classe de risco dos OGM em pesquisa;</p>
-        <p>Nível de Biossegurança (1-4) e sinalização do risco biológico de cada área;
-        Instalações utilizadas e habilitadas no CQB.</p>
-      </div>
-    </div>
-
-    <div id="div20" class="content">
-      <div class="slide" id="conteudo20">
-        <h1>Análise dos documentos</h1>
-        <hr>
-        <p>Registro dos treinamentos;</p>
-        <p>Registro individual dos projetos;</p>
-        <p>Atas de reuniões da CIBio;</p>
-        <p>Relatórios de inspeções internas;</p>
-        <p>Manual de Biossegurança;</p>
-        <p>Registro dos procedimentos de controle de insetos e roedores;</p>
-        <p>Registro de procedimentos de descontaminação e descarte de resíduos;</p>
-        <p>Certificados de calibração de equipamentos (cabines e autoclaves).</p>
-        <button onclick="proximo()">Próximo</button>
-      </div>
-    </div>
-
-    <div id="div21" class="content">
-      <div class="slide" id="conteudo21">
-        <h1>Objetivo da fiscalização</h1>
-        <hr>
-        <p>Verificar o cumprimento da Lei;</p>
-        <p>Monitorar o registro de atividades;</p>
-        <p>Garantir um nível adequado de proteção nas atividades com OGM.</p>
-        <br>
-        <p><strong>Resultados:</strong></p>
-        <p>Elevar a confiança na tecnologia.</p>
-        <h1>PRECISAMOS OBEDECER AS NORMAS DE BIOSSEGURANÇA!!!</h1>
-      </div>
-    </div>
-
-    <div id="div22" class="content">
-      <div class="slide" id="conteudo22">
-        <h1>Definição de Biossegurança</h1>
-        <hr>
-        <p><strong>“um conjunto de medidas e procedimentos técnicos necessários para a manipulação de agentes e materiais biológicos capazes de prevenir, reduzir, controlar ou eliminar riscos inerentes às atividades que possam comprometer a saúde humana, animal, vegetal e o meio ambiente”.</strong></p>
-        <hr>
-        <p><strong>Um conjunto de normas e procedimentos que visam:</strong></p>
-        <p>1. Garantir a proteção dos funcionários;</p>
-        <p>2. Garantir a proteção da coletividade;</p>
-        <p>3. Garantir a proteção do meio ambiente;</p>
-        <p>4. Garantir a proteção do material biológico.</p>
-      </div>
-    </div>
-
-    <div id="div23" class="content">
-      <div class="slide" id="conteudo23">
-        <h1>Sistema de Biossegurança Brasileiro</h1>
-        <hr>
-        <p><strong>“um conjunto de medidas e procedimentos técnicos necessários para a manipulação de agentes e materiais biológicos capazes de prevenir, reduzir, controlar ou eliminar riscos inerentes às atividades que possam comprometer a saúde humana, animal, vegetal e o meio ambiente”.</strong></p>
-        <hr>
-        <p><span class="icone">&#10154;</span> Não existe uma lei brasileira que regulamenta especificamente o trabalho realizado em laboratórios, a não ser a legislação envolvendo atividades com OGMs;</p>
-        <p><span class="icone">&#10154;</span> Para biossegurança, existem diretrizes cedidas pela Comissão de Biossegurança em Saúde do Ministério da Saúde (CBS/MS), que cumprem um papel importante na efetivação de ações relacionadas à Biossegurança em atividades laboratoriais:</p>
-        <p>- Classificação de risco dos agentes biológicos / Ministério da Saúde, Secretaria de Ciência, Tecnologia e Insumos Estratégicos, Departamento do Complexo Industrial e Inovação em Saúde. – 2. ed. – Brasília : Editora do Ministério da Saúde, 2010;</p>
-        <p>- Diretrizes gerais para o trabalho em contenção com material biológico / Ministério da Saúde, Secretaria de Ciência, Tecnologia e Insumos Estratégicos – Brasília: Ministério da Saúde, 2004.</p>
-      </div>
-    </div>
-
-    <div id="div24" class="content">
-      <div class="slide" id="conteudo24">
-        <h1>Trabalho em contenção com material biológico</h1>
-        <hr>
-        <p><span class="icone">&#10154;</span> Contenção: O objetivo da contenção é reduzir ou eliminar a exposição da equipe de um laboratório, de outras pessoas e do meio ambiente em geral aos agentes potencialmente perigosos.</p>
-        <p><span class="icone">&#10154;</span> Avaliação do risco do trabalho a ser realizado com um agente específico determinará a combinação adequada dos diferentes níveis de contenção.</p>
-        <button onclick="proximo()">Próximo</button>
-      </div>
-    </div>
-
-    <div id="div25" class="content">
-      <div class="slide" id="conteudo25">
-        <h1>Níveis de Biossegurança</h1>
-        <hr>
-        <p><span class="icone">&#10154;</span> Há 4 níveis de biossegurança, crescentes em grau de contenção e complexidade do nível de proteção, e normalmente estão de acordo com a classe de risco do agente biológico, embora exceções possam ocorrer.</p>
-        <p><span class="icone">&#10154;</span> Os níveis de biossegurança estipulam regras mínimas para as instalações, equipamentos de proteção e procedimentos que devem ser observados para manter a contenção do material biológico e proteção individual e da coletividade.</p>
-        <hr>
-        <p><strong>CLASSIFICAÇÃO DE RISCOS:</strong></p>
-        <p>As classes de risco de material biológico são assim definidas:</p>
-        <p><span class="icone">&#10154;</span> Classe de risco 1 (baixo risco individual e para a comunidade): inclui os agentes biológicos conhecidos por não causarem doenças no homem ou nos animais adultos sadios;</p>
-        <p><span class="icone">&#10154;</span> Classe de risco 2 (moderado risco individual e limitado risco para a comunidade): inclui os agentes biológicos que provocam infecções no homem ou nos animais, cujo potencial de propagação na comunidade e de disseminação no meio ambiente é limitado;</p>
-        <p><span class="icone">&#10154;</span> Classe de risco 3 (alto risco individual e moderado risco para a comunidade): inclui os agentes biológicos que possuem capacidade de transmissão por via respiratória e que causam patologias humanas ou animais, com tratamentos conhecidos;</p>
-        <p><span class="icone">&#10154;</span> Classe de risco 4 (alto risco individual e para a comunidade): inclui os agentes biológicos com grande poder de transmissibilidade por via respiratória de transmissão e tratamento desconhecidas.</p>
-      </div>
-    </div>
-
-    <div id="div26" class="content">
-      <div class="slide" id="conteudo26">
-        <h1>Cabines de Segurança Biológica</h1>
-        <hr>
-        <p><strong>Cabines de Segurança Biológica Classe I</strong></p>
-        <p>- “É uma cabine ventilada com fluxo de ar do ambiente, podendo ter a frente totalmente aberta ou com painel frontal ou painel frontal fechado com luvas de borracha. Possui duto de exaustão com filtro HEPA. Não há proteção para o experimento somente para o operador e o ambiente.”</p>
-        <p>Cabines de fluxo laminar.</p>
-        <hr>
-        <p><strong>Cabines de Segurança Biológica Classe II</strong></p>
-        <p>- “A cabine classe II é conhecida com o nome de Cabine de Segurança Biológica de Fluxo Laminar de Ar. O princípio fundamental é a proteção do operador, do meio ambiente e do experimento ou produto. (...) Possui filtro HEPA.”</p>
-        <p>São divididas em subgrupos:</p>
-        <hr>
-        <p><strong>Cabines de Segurança Biológica</strong></p>
-        <p>- É uma cabine de contenção máxima. É totalmente fechada com ventilação própria, construída em aço inox à prova de escape de ar e opera com pressão negativa. O trabalho se efetua com luvas de borracha presas à cabine;</p>
-        <p>- Para organismos de alto risco;</p>
-        <p>- A UnB não tem permissão para trabalhar com esses organismos!</p>
-      </div>
-    </div>
-
-    <div id="div27" class="content">
-      <div class="slide" id="conteudo27">
-        <h1>CSB Classe II A (A1)</h1>
-        <hr>
-        <p><span class="icone">&#10154;</span> O ar contaminado após filtragem passa pelo filtro HEPA do exaustor, passa ao ambiente onde a cabine está instalada;</p>
-        <p><span class="icone">&#10154;</span> Recircula 70% do ar, o resto sai pela parte superior.</p>
-      </div>
-    </div>
-
-    <div id="div28" class="content">
-      <div class="slide" id="conteudo28">
-        <h1>CSB Classe II B</h1>
-        <hr>
-        <p>B1: Muito parecida com a de classe II A, mas recircula 30% do ar, podendo ser usada com algumas substâncias tóxicas;</p>
-        <p>B2:  não recircula o ar, todo o ar sai pelo sistema de exaustão.</p>
-      </div>
-    </div>
-
-    <div id="div29" class="content">
-      <div class="slide" id="conteudo29">
-        <h1>Procedimentos emergenciais</h1>
-        <hr>
-        <p>1. Conter</p>
-        <p>2. Descontaminar</p>
-        <p>3. Limpar</p>
-        <p>4. COMUNICAR IMEDIATAMENTE O TÉCNICO RESPONSÁVEL PELO LABORATÓRIO E A CIBio</p>
-        <hr>
-        <p>Caso o OGM não tenha sido contido, a CIBio deve reportar o incidente a CTNBio no prazo máximo de 5 dias!</p>
-      </div>
-    </div>
-
-    <div id="div30" class="content">
-      <div class="slide" id="conteudo30">
-        <h1>Em caso de acidentes</h1>
-        <hr>
-        <p>1. Não entre em pânico;</p>
-        <p>2. Peça ajuda à pessoa mais próxima;</p>
-        <p>3. Saiba onde estão os chuveiros e lava-olhos.</p>
-        <hr>
-        <p><strong>Em caso de acidente, incidente ou potencial acidente, informar de imediato o Pesquisador Responsável, e se possível e seguro devem ser seguidos os seguintes procedimentos mitigatórios:</strong></p>
-        <p><span class="icone">&#10154;</span> Em caso de derramamento de material biológico, este deve ser contido com a utilização de material absorvente (use luvas!). Todo o material absorvente deve ser descontaminado antes de ser descartado (ex. autoclave). A área do derramamento deve ser descontaminada (ex. hipoclorito ou lisofórmio). Após a limpeza dos resíduos, outra atividade poderá ser executada.</p>
-        <p><span class="icone">&#10154;</span> Em caso de punção, ferimento, inalação ou ingestão de material biológico patogênico, informar de imediato o Pesquisador Responsável. Se necessário exame médico e tratamento, a pessoa será encaminhada para o Hospital (HUB) e deve informar o microrganismo manipulado.</p>
-      </div>
-    </div>
-
-    <div id="div31" class="content">
-      <div class="slide" id="conteudo31">
-        <h1>Literatura útil</h1>
-        <hr>
-        <p>Molecular Cloning – A laboratory  manual (Sambrook)</p>
-        <img src="img/livro1.jpg">
-        <hr>
-        <p>Na Bancada – Manual de iniciação científica para laboratórios de pesquisa biomédicas (Kathy Barker)</p>
-        <img src="img/livro2.png">
-        <hr>
-        <p>Manual de Biossegurança (Mário Hiroyuki Hirata)</p>
-        <img src="img/livro3.png">
-      </div>
-    </div>
-
-
-    <script src="js/script.js"></script>
     <script src="lib/jquery.min.js"></script>
     <script src="lib/bootstrap.bundle.min.js"></script>
     <script src="lib/fontawesome.js"></script>
