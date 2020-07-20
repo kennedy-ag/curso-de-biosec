@@ -70,3 +70,8 @@ div#conteudo{
   box-shadow: 0px 20px 35px rgba(0,0,0,0.8);
   border: 2px solid white;
 }
+div#accordion1 button{
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
