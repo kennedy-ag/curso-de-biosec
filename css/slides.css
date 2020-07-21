@@ -81,3 +81,13 @@ div#conteudo17 thead, div#conteudo18 thead{
 div#conteudo18 td {
 	color: white;
 }
+div#conteudo31 img{
+	width: 30%;
+	height: auto;
+}
+div#conteudo31 li a{
+	padding: 0% 25px;
+	margin: 10px;
+	background-color: #656565;
+	color: white;
+}
