@@ -60,3 +60,24 @@ div#conteudo11 h3{
 	font-size: 14pt;
 	color: white;
 }
+div#accordion1 button{
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+ul#slide-tab-1 li a{
+  background-color: #656565;
+  color: white;
+}
+div#slideTabContent1 .tab-pane{
+	padding: 35px 15px;
+}
+div#conteudo17 table, div#conteudo18 table{
+	width: 60%;
+}
+div#conteudo17 thead, div#conteudo18 thead{
+	background-color: #17a2b8;
+}
+div#conteudo18 td {
+	color: white;
+}
