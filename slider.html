@@ -11,8 +11,8 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow-lg">
-      <a class="navbar-brand" href="#" onclick="openNav()"><span class="navbar-toggler-icon"></span></a>
+    <nav class="navbar navbar-expand-sm navbar-secondary bg-secondary shadow-lg">
+      <a class="navbar-brand px-2 rounded" href="#" onclick="openNav()"><i class="fas fa-bars"></i></a>
       <ul class="navbar-nav m-auto">
         <li class="nav-item active">
           <a class="nav-link btn btn-info mx-2 my-2" href="#" onclick="voltarAoInicio('opt0')"><i class="fas fa-home"></i> Início <span class="sr-only">(current)</span></a>
@@ -49,11 +49,9 @@
             <option id="opt24">Trabalho em contenção com material biológico</option>
             <option id="opt25">Níveis de Biossegurança</option>
             <option id="opt26">Cabines de Segurança Biológica</option>
-            <option id="opt27">CSB Classe II A (A1)</option>
-            <option id="opt28">CSB Classe II B</option>
-            <option id="opt29">Procedimentos emergenciais</option>
-            <option id="opt30">Em caso de acidentes</option>
-            <option id="opt31">Literatura útil</option>
+            <option id="opt27">Procedimentos emergenciais</option>
+            <option id="opt28">Em caso de acidentes</option>
+            <option id="opt29">Literatura útil</option>
           </select>
         </li>
         <li class="nav-item active">
@@ -94,11 +92,9 @@
       <a href="#" onclick="menuSelect('opt24')">&#9900; Trabalho em contenção com material biológico</a>
       <a href="#" onclick="menuSelect('opt25')">&#9900; Níveis de Biossegurança</a>
       <a href="#" onclick="menuSelect('opt26')">&#9900; Cabines de Segurança Biológica</a>
-      <a href="#" onclick="menuSelect('opt27')">&#9900; CSB Classe II A (A1)</a>
-      <a href="#" onclick="menuSelect('opt28')">&#9900; CSB Classe II B</a>
-      <a href="#" onclick="menuSelect('opt29')">&#9900; Procedimentos emergenciais</a>
-      <a href="#" onclick="menuSelect('opt30')">&#9900; Em caso de acidentes</a>
-      <a href="#" onclick="menuSelect('opt31')">&#9900; Literatura útil</a>
+      <a href="#" onclick="menuSelect('opt27')">&#9900; Procedimentos emergenciais</a>
+      <a href="#" onclick="menuSelect('opt28')">&#9900; Em caso de acidentes</a>
+      <a href="#" onclick="menuSelect('opt29')">&#9900; Literatura útil</a>
       <a href="#"></a>
       <a href="#"></a>
       <a href="#"></a>
@@ -590,6 +586,31 @@
                 <p>- “A cabine classe II é conhecida com o nome de Cabine de Segurança Biológica de Fluxo Laminar de Ar. O princípio fundamental é a proteção do operador, do meio ambiente e do experimento ou produto. (...) Possui filtro HEPA.”</p>
                 <p>São divididas em subgrupos:</p>
               </div>
+
+
+              <p class="text-center">
+                <a class="btn btn-primary my-1" data-toggle="collapse" href="#cabine1" role="button" aria-expanded="false" aria-controls="cabine1">CSB Classe II A (A1)</a>
+                <a class="btn btn-primary my-1" data-toggle="collapse" href="#cabine2" role="button" aria-expanded="false" aria-controls="cabine2">CSB Classe II B</a>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse pl-3 py-3" id="cabine1">
+                    <div class="card card-body">
+                      <p>O ar contaminado após filtragem passa pelo filtro HEPA do exaustor, passa ao ambiente onde a cabine está instalada;</p>
+                      <p>Recircula 70% do ar, o resto sai pela parte superior.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse pr-3 py-3" id="cabine2">
+                    <div class="card card-body">
+                      <p>B1: Muito parecida com a de classe II A, mas recircula 30% do ar, podendo ser usada com algumas substâncias tóxicas;</p>
+                      <p>B2:  não recircula o ar, todo o ar sai pelo sistema de exaustão.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
           <div class="card bg-info">
@@ -614,24 +635,6 @@
 
     <div id="div27" class="content">
       <div class="slide" id="conteudo27">
-        <h1>CSB Classe II A (A1)</h1>
-        <hr>
-        <p>O ar contaminado após filtragem passa pelo filtro HEPA do exaustor, passa ao ambiente onde a cabine está instalada;</p>
-        <p>Recircula 70% do ar, o resto sai pela parte superior.</p>
-      </div>
-    </div>
-
-    <div id="div28" class="content">
-      <div class="slide" id="conteudo28">
-        <h1>CSB Classe II B</h1>
-        <hr>
-        <p>B1: Muito parecida com a de classe II A, mas recircula 30% do ar, podendo ser usada com algumas substâncias tóxicas;</p>
-        <p>B2:  não recircula o ar, todo o ar sai pelo sistema de exaustão.</p>
-      </div>
-    </div>
-
-    <div id="div29" class="content">
-      <div class="slide" id="conteudo29">
         <h1>Procedimentos emergenciais</h1>
         <hr>
         <p>1. Conter</p>
@@ -643,8 +646,8 @@
       </div>
     </div>
 
-    <div id="div30" class="content">
-      <div class="slide" id="conteudo30">
+    <div id="div28" class="content">
+      <div class="slide" id="conteudo28">
         <h1>Em caso de acidentes</h1>
         <hr>
         <p>1. Não entre em pânico;</p>
@@ -657,8 +660,8 @@
       </div>
     </div>
 
-    <div id="div31" class="content">
-      <div class="slide" id="conteudo31">
+    <div id="div29" class="content">
+      <div class="slide" id="conteudo29">
         <h1>Literatura útil</h1>
         <hr>
         <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">

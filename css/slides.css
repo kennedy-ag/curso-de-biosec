@@ -43,10 +43,6 @@ div#conteudo1 h3{
 	margin-left: 20px;
 	margin-bottom: 20px;
 }
-div#conteudo2{
-	background-color: blue;
-	border-radius: 10px;
-}
 div#conteudo5 .text-group{
 	text-align: center;
 	margin: 0;
@@ -81,11 +77,14 @@ div#conteudo17 thead, div#conteudo18 thead{
 div#conteudo18 td {
 	color: white;
 }
-div#conteudo31 img{
+div#conteudo26 #cabine1 .card, div#conteudo26 #cabine2 .card{
+	background-color: #777;
+}
+div#conteudo29 img{
 	width: 30%;
 	height: auto;
 }
-div#conteudo31 li a{
+div#conteudo29 li a{
 	padding: 0% 25px;
 	margin: 10px;
 	background-color: #656565;
