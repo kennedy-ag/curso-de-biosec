@@ -65,19 +65,47 @@ div#conteudo1 h3{
 #comp .text-group p:hover{
 	-webkit-transform: scale(1.1);
 }
-div#conteudo10 h2{
+#conteudo6 .nav-link{
+	color: white;
+}
+#conteudo6 .nav .active{
+	color: #17a2b8;
+	font-weight: bolder;
+}
+#nav-ctnbio h3, #nav-cnbs h3{
+	color: white;
+	margin-bottom: 20px;
+}
+#nav-ctnbio .tab-pane{
+	background-color: #656565;
+	border-radius: 10px;
+}
+#composicao p{
+	background-color: #517096;
+	padding: 10px;
+	border-radius: 10px;
+	-webkit-transition: all 0.2s;
+}
+#composicao p:hover{
+	-webkit-transform: scale(1.1);
+}
+#nav-cnbs img{
+	width: 80%;
+	height: auto;
+}
+div#conteudo8 h2{
 	font-size: 20pt;
 	color: white;
 	margin-bottom: 20px;
 }
-div#conteudo10 h3{
+div#conteudo8 h3{
 	font-size: 14pt;
 	color: white;
 }
-div#conteudo10 .nav-link{
+div#conteudo8 .nav-link{
 	background-color: #17a2b8;
 }
-div#conteudo10 a.active{
+div#conteudo8 a.active{
 	border: 2px solid white;
 }
 div#accordion1 button{
@@ -92,26 +120,26 @@ ul#slide-tab-1 li a{
 div#slideTabContent1 .tab-pane{
 	padding: 35px 15px;
 }
-div#conteudo16 table, div#conteudo17 table{
+div#conteudo12 table, div#conteudo13 table{
 	width: 60%;
 }
-div#conteudo16 thead, div#conteudo17 thead{
+div#conteudo12 thead, div#conteudo13 thead{
 	background-color: #17a2b8;
 }
-div#conteudo17 td {
+div#conteudo13 td {
 	color: white;
 }
-div#conteudo25 #cabine1 .card, div#conteudo26 #cabine2 .card{
+div#conteudo21 #cabine1 .card, div#conteudo21 #cabine2 .card{
 	background-color: #777;
 }
-#conteudo26 .card{
+#conteudo22 .card{
 	background-color: #517096;
 }
-div#conteudo27 img{
+div#conteudo23 img{
 	width: 30%;
 	height: auto;
 }
-div#conteudo27 li a{
+div#conteudo23 li a{
 	padding: 0% 25px;
 	margin: 10px;
 	background-color: #656565;
