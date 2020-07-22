@@ -43,18 +43,42 @@ div#conteudo1 h3{
 	margin-left: 20px;
 	margin-bottom: 20px;
 }
-div#conteudo5 .text-group{
-	text-align: center;
-	margin: 0;
+#conteudo1 a{
+	color: white;
 }
-div#conteudo11 h2{
+#conteudo1 .tab-pane{
+	border: 2px dashed #17a2b8;
+	border-radius: 10px;
+}
+#conteudo2 a{
+	color: white;
+}
+#comp .text-group{
+	width: 60%;
+}
+#comp .text-group p{
+	background-color: #517096;
+	padding: 10px;
+	border-radius: 10px;
+	-webkit-transition: all 0.2s;
+}
+#comp .text-group p:hover{
+	-webkit-transform: scale(1.1);
+}
+div#conteudo10 h2{
 	font-size: 20pt;
 	color: white;
 	margin-bottom: 20px;
 }
-div#conteudo11 h3{
+div#conteudo10 h3{
 	font-size: 14pt;
 	color: white;
+}
+div#conteudo10 .nav-link{
+	background-color: #17a2b8;
+}
+div#conteudo10 a.active{
+	border: 2px solid white;
 }
 div#accordion1 button{
   color: white;
@@ -68,23 +92,26 @@ ul#slide-tab-1 li a{
 div#slideTabContent1 .tab-pane{
 	padding: 35px 15px;
 }
-div#conteudo17 table, div#conteudo18 table{
+div#conteudo16 table, div#conteudo17 table{
 	width: 60%;
 }
-div#conteudo17 thead, div#conteudo18 thead{
+div#conteudo16 thead, div#conteudo17 thead{
 	background-color: #17a2b8;
 }
-div#conteudo18 td {
+div#conteudo17 td {
 	color: white;
 }
-div#conteudo26 #cabine1 .card, div#conteudo26 #cabine2 .card{
+div#conteudo25 #cabine1 .card, div#conteudo26 #cabine2 .card{
 	background-color: #777;
 }
-div#conteudo29 img{
+#conteudo26 .card{
+	background-color: #517096;
+}
+div#conteudo27 img{
 	width: 30%;
 	height: auto;
 }
-div#conteudo29 li a{
+div#conteudo27 li a{
 	padding: 0% 25px;
 	margin: 10px;
 	background-color: #656565;
