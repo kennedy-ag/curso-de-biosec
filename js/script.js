@@ -1,6 +1,7 @@
 let slide_ativo = '0';
 function openNav() {
   document.getElementById("mySidenav").style.width = "300px";
+  document.getElementById("overlay").style.display = "block";
 }
 
 function closeNav() {
@@ -43,4 +44,7 @@ function voltarAoInicio(tgt){
 	let a = document.getElementById('conteudo');
 	let b = document.getElementById('div0');
 	a.innerHTML = b.innerHTML;
+}
+function off() {
+  document.getElementById("overlay").style.display = "none";
 }
