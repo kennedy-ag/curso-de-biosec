@@ -140,6 +140,14 @@ div#conteudo12 thead, div#conteudo13 thead{
 div#conteudo13 td {
 	color: white;
 }
+#conteudo20 p{
+	color: black;
+}
+#conteudo20 #nivel-div-3 .nav-link{
+	color: white;
+	padding: 5px 15px;
+	margin: 5px;
+}
 div#conteudo21 #cabine1 .card, div#conteudo21 #cabine2 .card{
 	background-color: #777;
 }
