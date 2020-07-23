@@ -47,7 +47,7 @@ div#conteudo1 h3{
 	color: white;
 }
 #conteudo1 .tab-pane{
-	border: 2px dashed #17a2b8;
+	border: 4px dashed #17a2b8;
 	border-radius: 10px;
 }
 #conteudo2 a{
@@ -64,6 +64,9 @@ div#conteudo1 h3{
 }
 #comp .text-group p:hover{
 	-webkit-transform: scale(1.1);
+}
+#conteudo4 .multi-collapse p{
+	color: black;
 }
 #conteudo6 .nav-link{
 	color: white;
@@ -94,7 +97,7 @@ div#conteudo1 h3{
 	height: auto;
 }
 div#conteudo8 h2{
-	font-size: 20pt;
+	font-size: 14pt;
 	color: white;
 	margin-bottom: 20px;
 }
@@ -120,6 +123,14 @@ ul#slide-tab-1 li a{
 div#slideTabContent1 .tab-pane{
 	padding: 35px 15px;
 }
+#conteudo11 .tab-pane{
+	background-color: #5b46b8;
+	border-radius: 10px;
+	padding: 15px;
+}
+#conteudo11 .nav-link{
+	color: white;
+}
 div#conteudo12 table, div#conteudo13 table{
 	width: 60%;
 }
@@ -144,4 +155,7 @@ div#conteudo23 li a{
 	margin: 10px;
 	background-color: #656565;
 	color: white;
+}
+#conteudo23 .nav-item .active{
+	border: 2px solid #fff;
 }
