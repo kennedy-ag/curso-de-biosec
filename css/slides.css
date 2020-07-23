@@ -148,6 +148,12 @@ div#conteudo13 td {
 	padding: 5px 15px;
 	margin: 5px;
 }
+#conteudo20 .tab-pane{
+	background-color: #dcdcdc;
+	border-radius: 10px;
+	padding: 25px;
+	border: 2px solid #17a2b8;
+}
 div#conteudo21 #cabine1 .card, div#conteudo21 #cabine2 .card{
 	background-color: #777;
 }
