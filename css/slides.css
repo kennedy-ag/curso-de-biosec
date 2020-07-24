@@ -143,7 +143,7 @@ div#conteudo13 td {
 #conteudo20 p{
 	color: black;
 }
-#conteudo20 #nivel-div-3 .nav-link{
+#conteudo20 .nav-link{
 	color: white;
 	padding: 5px 15px;
 	margin: 5px;
@@ -153,6 +153,23 @@ div#conteudo13 td {
 	border-radius: 10px;
 	padding: 25px;
 	border: 2px solid #17a2b8;
+}
+#conteudo20 #n2s3 h2{
+	color: orange;
+	font-size: 14pt;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+}
+#conteudo20 #sintomas li{
+	color: white;
+	margin: 0;
+}
+#conteudo20 #sintomas p{
+	color: white;
+	font-size: 10pt;
+	margin: 0;
 }
 div#conteudo21 #cabine1 .card, div#conteudo21 #cabine2 .card{
 	background-color: #777;

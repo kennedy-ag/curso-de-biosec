@@ -14,7 +14,7 @@ body{
 .navbar-brand:hover{
   background-color: #656565;
 }
-#overlay{
+#overlay-m{
   position: fixed;
   display: none;
   width: 100%;
