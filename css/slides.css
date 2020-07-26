@@ -100,16 +100,15 @@ div#conteudo8 h2{
 	font-size: 14pt;
 	color: white;
 	margin-bottom: 20px;
+	-webkit-transition: all 0.3s;
 }
-div#conteudo8 h3{
-	font-size: 14pt;
-	color: white;
+#conteudo8 h2:hover{
+	-webkit-transform: scale(1.1);
 }
-div#conteudo8 .nav-link{
-	background-color: #17a2b8;
-}
-div#conteudo8 a.active{
-	border: 2px solid white;
+#conteudo8 div h2{
+	padding: 15px;
+	background-color: #653eb8;
+	border-radius: 5px;
 }
 div#accordion1 button{
   color: white;
