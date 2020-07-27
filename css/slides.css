@@ -68,6 +68,11 @@ div#conteudo1 h3{
 #conteudo4 .multi-collapse p{
 	color: black;
 }
+#conteudo-slide-5{
+	display: none;
+	border: 3px dashed #517;
+	margin: 20px;
+}
 #conteudo6 .nav-link{
 	color: white;
 }

@@ -48,3 +48,11 @@ function voltarAoInicio(tgt){
 function off() {
   document.getElementById("overlay-m").style.display = "none";
 }
+function showContent(content) {
+	let c = document.getElementById(content);
+	c.style.display = 'block';
+}
+function hideContent(content) {
+	let c = document.getElementById(content);
+	c.style.display = 'none';
+}
