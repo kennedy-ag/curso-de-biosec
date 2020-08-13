@@ -194,3 +194,15 @@ div#conteudo23 li a{
 #conteudo23 .nav-item .active{
 	border: 2px solid #fff;
 }
+
+.blink {
+	margin: 0;
+	padding: 0;
+  animation: blinker 2.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
